@@ -17,7 +17,7 @@ public class FutureTest {
                     try {
                         System.out.println(Thread.currentThread().getName()+":await");
                         latch.await();
-                        System.out.println(Thread.currentThread().getName()+":result:"+ getResult(100));
+                        System.out.println(Thread.currentThread().getName()+":result:"+ getResult(new Integer(10)));
 
                     } catch (Exception e) {
                         e.printStackTrace();
