@@ -7,7 +7,8 @@ import java.util.concurrent.*;
 
 /*内存泄漏例子：
 1.多线程：
-
+2.ThreadLocal
+3.HashMap的可以为对象时，没有实现hashcode、equal方法
  */
 public class MemoryLeak {
 
