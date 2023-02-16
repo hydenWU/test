@@ -1,4 +1,7 @@
-package study.thread.math;
+package study.math;
+
+import java.util.BitSet;
+
 /*
 1、递归与分治:a.要求原始问题可以分解成相同问题的子问题,示例：阶乘、斐波纳契数列,F1=1,F2=1,Fn=F（n-1）+F（n-2）
 b.待解决复杂的问题能够简化为几个若干个小规模相同的问题，然后逐步划分，达到易于解决的程度:求最值
@@ -9,6 +12,7 @@ b.待解决复杂的问题能够简化为几个若干个小规模相同的问题
  */
 public class Test {
     public static void main(String[] args) {
+        BitSet bs;
         System.out.println( fbnqsl(8));
     }
 
