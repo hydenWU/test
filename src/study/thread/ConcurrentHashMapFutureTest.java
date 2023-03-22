@@ -2,11 +2,9 @@ package study.thread;
 
 import java.util.Random;
 import java.util.concurrent.*;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
 
 //因式分解，并发请求某数的因式分解，对算过的或正在算的，可以直接利用其结果。
-public class FutureTest {
+public class ConcurrentHashMapFutureTest {
     private static ConcurrentHashMap<Integer, FutureTask<String>> resultMap = new ConcurrentHashMap();
     private static final CountDownLatch latch = new CountDownLatch(1);
     public static void main(String[] args) throws InterruptedException {

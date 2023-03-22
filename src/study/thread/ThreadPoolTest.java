@@ -1,7 +1,6 @@
 package study.thread;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -37,7 +36,9 @@ public class ThreadPoolTest {
             System.out.println(f.get());
         }
 
-
+        for(Future<String> f: taskList){
+            System.out.println(f.get());
+        }
         threadPool.shutdown();
 
     }
